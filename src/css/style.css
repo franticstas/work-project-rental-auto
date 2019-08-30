@@ -409,7 +409,8 @@ main {
 .header {
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  position: relative; }
 
 .header .wrapper {
   text-align: center;
@@ -632,5 +633,34 @@ main {
 /*
  * Стили Предложений
  */
-.offers p {
-  margin-top: 150px; }
+.offers__left-block {
+  /*Левый раздел*/ }
+
+.offers__right-block {
+  /*Правый раздел*/
+  text-align: center; }
+
+.offers__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #222222;
+  position: relative;
+  padding-right: 15px;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .offers__title::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #C4C4C4;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-left: 20px; }
+
+.offers__title span {
+  max-width: 200px;
+  display: inline-block;
+  text-align: right; }

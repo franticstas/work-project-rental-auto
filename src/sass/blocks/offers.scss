@@ -1,6 +1,47 @@
 /*
  * Стили Предложений
  */
-.offers p {
-  margin-top: 150px;
+.offers {
+
+}
+
+.offers__wrapper {
+
+}
+
+.offers__left-block {/*Левый раздел*/
+
+}
+
+.offers__right-block {/*Правый раздел*/
+  text-align: center;
+}
+
+.offers__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: $black;
+  position: relative;
+  padding-right: 15px;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #C4C4C4;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+  }
+}
+
+.offers__title span {
+  max-width: 200px;
+  display: inline-block;
+  text-align: right;
 }
