@@ -1,0 +1,61 @@
+$desktop-width: 1470px;
+$tablet-width: 768px;
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+  url('../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+  url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+  url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/MullerExtraBold.woff2') format('woff2'),
+  url('../fonts/MullerExtraBold.woff') format('woff');
+  font-display: swap;
+}
+
+$Muller: "Muller", "Arial", sans-serif;
+$red: #FE584A;
+$black: #222222;
+$grey: #4F4F4F;
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin media($size) {
+  @media (min-width: #{$size}) {
+    @content;
+  }
+}

@@ -1,0 +1,169 @@
+/*
+ * Стили хедера
+ */
+.header {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+}
+
+.header .wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(550px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include tablet {
+    padding: 0 20px;
+  }
+}
+
+.header__nav {/*Меню*/
+  @include tablet {
+    height: auto;
+  }
+}
+
+.header__nav-button {/*Кнопка меню*/
+  @include tablet {
+    display: none;
+  }
+}
+
+.header__nav-list {
+  @include tablet {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+.header__nav-item {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.header__nav-item a {
+  display: inline-block;
+  font-size: 16px;
+  color: $grey;
+  font-weight: 400;
+  padding: 25px;
+  width: 100%;
+
+  @include tablet {
+    padding: 0 10px;
+    height: 100%;
+    line-height: 65px;
+  }
+
+  @include desktop {
+    padding: 0 25px;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    color: #ffffff;
+    background-color: $red;
+  }
+}
+
+.header__phone {
+  font-size: 18px;
+  color: $black;
+  font-weight: 800;
+  white-space: nowrap;
+
+  @include media(550px) {
+    margin-right: 80px;
+  }
+
+  @include tablet {
+    margin: 0;
+  }
+}
+
+/*
+ * Стили для мобильного меню
+ */
+@media (max-width: 767px) {
+  .header__nav {
+    width: 244px;
+    height: 100%;
+    transition: all 0.7s ease;
+    position: fixed;
+    top: 0;
+    right: -244px;
+    z-index: 3;
+    background-color: #ffffff;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  .header__nav--show {
+    right: 0;
+  }
+
+  .header__nav-button {
+    position: absolute;
+    top: 15px;
+    left: -70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+
+    &:active,
+    &:hover,
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
+  }
+
+  .header__nav-button span {
+    width: 55px;
+    height: 8px;
+    margin-bottom: 10px;
+    background: #7f8fa6;
+    border-radius: 4px;
+    transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  }
+
+  .span1 {
+    transform-origin: 4px 0;
+  }
+
+  .span3 {
+    transform-origin: bottom right;
+  }
+
+
+  .header__nav-button--close .span1 {
+    background-color: $red;
+    transform: rotate(45deg) translate(8px);
+  }
+
+  .header__nav-button--close .span2 {
+    transform: rotate(495deg) translate(4px);
+    background-color: $red;
+  }
+
+  .header__nav-button--close .span3 {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+}
