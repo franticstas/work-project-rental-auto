@@ -405,7 +405,19 @@ main {
 
 .section-title {
   font-size: 45px;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #222222;
+  position: relative; }
+  .section-title::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #C4C4C4;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-left: 20px; }
 
 /*
  * Стили хедера
@@ -943,3 +955,66 @@ main {
 
 .offers__right-block--vip .offers__title {
   min-height: auto; }
+
+/*
+ * Стили для секции Преимущества
+ */
+.advantages .wrapper {
+  padding: 0 10px; }
+
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (min-width: 1470px) {
+    .advantages__list {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+
+.advantages__item {
+  border: 1px solid #E0E0E0;
+  padding: 26px 30px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 470px;
+  width: 100%;
+  min-width: 300px; }
+  @media (min-width: 1470px) {
+    .advantages__item {
+      margin: 0; } }
+
+.advantages__item span {
+  font-size: 16px;
+  color: #222222;
+  font-weight: 700;
+  border-left: 1px solid #C4C4C4;
+  padding-left: 10px;
+  margin-left: 50px;
+  min-height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .advantages__item span::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    left: -60px; }
+
+.advantages__item--premium-lineup span::before {
+  background-image: url("../img/adv1.svg"); }

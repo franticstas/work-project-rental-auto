@@ -92,4 +92,17 @@ main {
 .section-title {
   font-size: 45px;
   font-weight: 700;
+  color: $black;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #C4C4C4;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+  }
 }

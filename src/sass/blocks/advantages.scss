@@ -1,0 +1,58 @@
+/*
+ * Стили для секции Преимущества
+ */
+.advantages .wrapper {
+  padding: 0 10px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include desktop {
+    justify-content: space-between;
+  }
+}
+
+.advantages__item {
+  border: 1px solid #E0E0E0;
+  padding: 26px 30px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 470px;
+  width: 100%;
+  min-width: 300px;
+
+  @include desktop {
+    margin: 0;
+  }
+}
+
+.advantages__item span {
+  font-size: 16px;
+  color: $black;
+  font-weight: 700;
+  border-left: 1px solid #C4C4C4;
+  padding-left: 10px;
+  margin-left: 50px;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    left: -60px;
+  }
+}
+
+.advantages__item--premium-lineup span {
+  &::before {
+    background-image: url("../img/adv1.svg");
+  }
+}
