@@ -358,6 +358,12 @@ a {
 main {
   display: block; }
 
+h3 {
+  font-size: 32px;
+  color: #222222;
+  margin: 20px 0;
+  font-weight: 500; }
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -404,20 +410,49 @@ main {
   font-weight: 700; }
 
 .section-title {
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 700;
   color: #222222;
-  position: relative; }
-  .section-title::before {
-    position: absolute;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: #C4C4C4;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    margin-left: 20px; }
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 45px; } }
+
+.section-title__left-line {
+  margin: 0 auto; }
+  @media (min-width: 1470px) {
+    .section-title__left-line {
+      margin: 0;
+      width: 50%;
+      position: relative; }
+      .section-title__left-line::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #C4C4C4;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); } }
+
+@media (min-width: 1470px) {
+  .section-title__left {
+    position: relative;
+    z-index: 2;
+    max-width: 730px;
+    margin-left: auto;
+    display: block;
+    background-color: #ffffff; } }
+
+@media (min-width: 1470px) {
+  .section-title__right {
+    margin-right: auto;
+    width: 50%; } }
 
 /*
  * Стили хедера
@@ -992,7 +1027,8 @@ main {
   min-width: 300px; }
   @media (min-width: 1470px) {
     .advantages__item {
-      margin: 0; } }
+      margin: 0;
+      margin-bottom: 10px; } }
 
 .advantages__item span {
   font-size: 16px;
@@ -1018,3 +1054,59 @@ main {
 
 .advantages__item--premium-lineup span::before {
   background-image: url("../img/adv1.svg"); }
+
+.advantages__item--car-park span::before {
+  background-image: url("../img/adv2.svg"); }
+
+.advantages__item--experience span::before {
+  background-image: url("../img/adv3.svg"); }
+
+.advantages__item--discount span::before {
+  background-image: url("../img/adv4.svg"); }
+
+.advantages__item--guarantee span::before {
+  background-image: url("../img/adv5.svg"); }
+
+.advantages__item--quick-pick span::before {
+  background-image: url("../img/adv6.svg"); }
+
+/*
+ * Секция о компании
+ */
+.about-company .wrapper {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 768px) {
+    .about-company .wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+@media (min-width: 768px) {
+  .about-company__left,
+  .about-company__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%; } }
+
+@media (min-width: 1470px) {
+  .about-company__left,
+  .about-company__right {
+    max-width: 720px; } }
+
+.about-company ul {
+  list-style-type: square; }
+
+@media (min-width: 1470px) {
+  .about-company li {
+    margin: 20px 0; } }

@@ -27,6 +27,7 @@
 
   @include desktop {
     margin: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -54,5 +55,35 @@
 .advantages__item--premium-lineup span {
   &::before {
     background-image: url("../img/adv1.svg");
+  }
+}
+
+.advantages__item--car-park span {
+  &::before {
+    background-image: url("../img/adv2.svg");
+  }
+}
+
+.advantages__item--experience span {
+  &::before {
+    background-image: url("../img/adv3.svg");
+  }
+}
+
+.advantages__item--discount span {
+  &::before {
+    background-image: url("../img/adv4.svg");
+  }
+}
+
+.advantages__item--guarantee span {
+  &::before {
+    background-image: url("../img/adv5.svg");
+  }
+}
+
+.advantages__item--quick-pick span {
+  &::before {
+    background-image: url("../img/adv6.svg");
   }
 }

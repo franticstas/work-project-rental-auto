@@ -29,6 +29,13 @@ main {
   display: block;
 }
 
+h3 {
+  font-size: 32px;
+  color: $black;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -90,19 +97,65 @@ main {
 }
 
 .section-title {
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 700;
   color: $black;
   position: relative;
+  text-align: left;
+  margin-left: auto;
+  display: flex;
 
-  &::before {
-    position: absolute;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: #C4C4C4;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 20px;
+  @include tablet {
+    font-size: 45px;
+  }
+}
+
+//.section-title span {
+//  display: inline-block;
+//  width: 50%;
+//  height: auto;
+//  max-width: 730px;
+//}
+
+.section-title__left-line {
+  margin: 0 auto;
+
+  @include desktop {
+    margin: 0;
+    width: 50%;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #C4C4C4;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+}
+
+.section-title__left {
+
+
+  @include desktop {
+    position: relative;
+    z-index: 2;
+    max-width: 730px;
+    margin-left: auto;
+    display: block;
+    background-color: #ffffff;
+  }
+}
+
+.section-title__right {
+
+
+  @include desktop {
+    margin-right: auto;
+    width: 50%;
   }
 }
