@@ -15,6 +15,7 @@ body {
   background-color: #ffffff;
   font-weight: 400;
   color: $grey;
+  letter-spacing: 1px;
 }
 
 address {
@@ -30,10 +31,14 @@ main {
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 20px;
   color: $black;
   margin: 20px 0;
   font-weight: 500;
+
+  @include tablet {
+    font-size: 32px;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active) {

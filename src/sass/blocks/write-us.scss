@@ -1,0 +1,130 @@
+/*
+ * верстка секции Напишите нам
+ */
+.write-us {
+  @include desktop {
+    position: relative;
+    background-image: url("../img/bg-mail.svg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+}
+
+.write-us__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+  }
+}
+
+.write-us__form-block {
+  @include desktop {
+    flex: 0 1 50%;
+  }
+}
+
+.write-us form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  padding-bottom: 50px;
+
+  @include desktop {
+    width: 730px;
+    padding-left: 0;
+    margin-left: auto;
+  }
+}
+
+.write-us button {
+  align-self: flex-start;
+  margin: 10px 0;
+}
+
+.write-us input,
+.write-us textarea {
+  width: 100%;
+  border: 1px solid #BDBDBD;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding: 15px;
+  color: $black;
+  font-weight: 700;
+  letter-spacing: 1px;
+  max-width: 595px;
+  background-color: transparent;
+
+  @include tablet {
+    min-width: 350px;
+  }
+}
+
+.write-us input::placeholder,
+.write-us textarea::placeholder {
+  color: #BDBDBD;
+  letter-spacing: 1px;
+}
+
+.write-us input[type="checkbox"] {
+  width: auto;
+  min-width: auto;
+}
+
+.write-us__map {
+  @include tablet {
+    width: 100%;
+  }
+
+  @include desktop {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+  }
+}
+
+.check__label {/*Кастомный чекбокс*/
+  padding-left: 30px;
+  position: relative;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check__box {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: $red;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.check__input:checked + .check__box {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.check__label span {
+  color: $black;
+}
+
+.check__label a {
+  color: $black;
+  text-decoration: underline;
+}

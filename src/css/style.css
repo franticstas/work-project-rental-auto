@@ -347,7 +347,8 @@ body {
   font-family: "Muller", "Arial", sans-serif;
   background-color: #ffffff;
   font-weight: 400;
-  color: #4F4F4F; }
+  color: #4F4F4F;
+  letter-spacing: 1px; }
 
 address {
   font-style: normal; }
@@ -359,10 +360,13 @@ main {
   display: block; }
 
 h3 {
-  font-size: 32px;
+  font-size: 20px;
   color: #222222;
   margin: 20px 0;
   font-weight: 500; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 32px; } }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -1110,3 +1114,147 @@ h3 {
 @media (min-width: 1470px) {
   .about-company li {
     margin: 20px 0; } }
+
+/*
+ * верстка секции Напишите нам
+ */
+@media (min-width: 1470px) {
+  .write-us {
+    position: relative;
+    background-image: url("../img/bg-mail.svg");
+    background-position: bottom center;
+    background-repeat: no-repeat; } }
+
+.write-us__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 768px) {
+    .write-us__wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  @media (min-width: 1470px) {
+    .write-us__wrapper {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+
+@media (min-width: 1470px) {
+  .write-us__form-block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%; } }
+
+.write-us form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10px;
+  padding-bottom: 50px; }
+  @media (min-width: 1470px) {
+    .write-us form {
+      width: 730px;
+      padding-left: 0;
+      margin-left: auto; } }
+
+.write-us button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 10px 0; }
+
+.write-us input,
+.write-us textarea {
+  width: 100%;
+  border: 1px solid #BDBDBD;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding: 15px;
+  color: #222222;
+  font-weight: 700;
+  letter-spacing: 1px;
+  max-width: 595px;
+  background-color: transparent; }
+  @media (min-width: 768px) {
+    .write-us input,
+    .write-us textarea {
+      min-width: 350px; } }
+
+.write-us input::-webkit-input-placeholder,
+.write-us textarea::-webkit-input-placeholder {
+  color: #BDBDBD;
+  letter-spacing: 1px; }
+
+.write-us input::-moz-placeholder,
+.write-us textarea::-moz-placeholder {
+  color: #BDBDBD;
+  letter-spacing: 1px; }
+
+.write-us input::-ms-input-placeholder,
+.write-us textarea::-ms-input-placeholder {
+  color: #BDBDBD;
+  letter-spacing: 1px; }
+
+.write-us input::placeholder,
+.write-us textarea::placeholder {
+  color: #BDBDBD;
+  letter-spacing: 1px; }
+
+.write-us input[type="checkbox"] {
+  width: auto;
+  min-width: auto; }
+
+@media (min-width: 768px) {
+  .write-us__map {
+    width: 100%; } }
+
+@media (min-width: 1470px) {
+  .write-us__map {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0; } }
+
+.check__label {
+  /*Кастомный чекбокс*/
+  padding-left: 30px;
+  position: relative; }
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); }
+
+.check__box {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: #FE584A;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.check__input:checked + .check__box {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.check__label span {
+  color: #222222; }
+
+.check__label a {
+  color: #222222;
+  text-decoration: underline; }
