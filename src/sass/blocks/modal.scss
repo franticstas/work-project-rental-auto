@@ -1,0 +1,61 @@
+/*
+ * Модальное окно
+ */
+.modal form {
+  display: flex;
+  flex-direction: column;
+  //padding: 0 10px;
+  padding-bottom: 50px;
+
+  @include desktop {
+    width: 730px;
+    padding-left: 0;
+    margin-left: auto;
+  }
+}
+
+.modal button {
+  align-self: flex-start;
+  margin: 10px 0;
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  border: 1px solid #BDBDBD;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding: 15px;
+  color: $black;
+  font-weight: 700;
+  letter-spacing: 1px;
+  max-width: 595px;
+  background-color: transparent;
+
+  @include tablet {
+    min-width: 350px;
+  }
+}
+
+.modal input::placeholder,
+.modal textarea::placeholder {
+  color: #BDBDBD;
+  letter-spacing: 1px;
+}
+
+.modal input[type="checkbox"] {
+  width: auto;
+  min-width: auto;
+}
+
+.modal__title {
+  font-size: 30px;
+  font-weight: 800;
+  color: $black;
+  margin-bottom: 20px;
+
+}
+
+.modal {
+  display: none;
+}

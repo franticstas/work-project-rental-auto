@@ -2,7 +2,16 @@
  * БЛОК ХЛЕБНЫЕ КРОШКИ
  */
 .breadcrumbs {
+  margin-left: 10px;
+  max-width: 800px;
 
+  @include tablet {
+    margin-left: auto;
+  }
+
+  @include desktop {
+    max-width: $desktop-width;
+  }
 }
 
 .breadcrumbs .wrapper {
@@ -17,10 +26,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
-
-  @include desktop {
-    padding-top: 30px;
-  }
 }
 
 .breadcrumbs__item {
@@ -31,7 +36,6 @@
   margin-left: 5px;
 
   &::before {
-    font-family: $OpenSans400;
     content: "\\ ";
     color: #828282;
     font-size: 13px;
@@ -40,7 +44,6 @@
 
 .breadcrumbs a {
   color: #273319;
-  font-family: $OpenSans400;
   font-size: 11px;
   line-height: 18px;
 

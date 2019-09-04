@@ -411,7 +411,14 @@ h3 {
   border: none;
   padding: 15px 60px;
   font-size: 18px;
-  font-weight: 700; }
+  font-weight: 700;
+  display: inline-block; }
+
+@media (min-width: 1470px) {
+  h1.section-title {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px; } }
 
 .section-title {
   font-size: 25px;
@@ -1262,7 +1269,13 @@ h3 {
 .check__label {
   /*Кастомный чекбокс*/
   padding-left: 30px;
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .check__input {
   position: absolute;
@@ -1414,3 +1427,124 @@ h3 {
 
 .footer__bottom a {
   text-decoration: underline; }
+
+/*
+ * Модальное окно
+ */
+.modal form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 50px; }
+  @media (min-width: 1470px) {
+    .modal form {
+      width: 730px;
+      padding-left: 0;
+      margin-left: auto; } }
+
+.modal button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 10px 0; }
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  border: 1px solid #BDBDBD;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding: 15px;
+  color: #222222;
+  font-weight: 700;
+  letter-spacing: 1px;
+  max-width: 595px;
+  background-color: transparent; }
+  @media (min-width: 768px) {
+    .modal input,
+    .modal textarea {
+      min-width: 350px; } }
+
+.modal input::-webkit-input-placeholder,
+.modal textarea::-webkit-input-placeholder {
+  color: #BDBDBD;
+  letter-spacing: 1px; }
+
+.modal input::-moz-placeholder,
+.modal textarea::-moz-placeholder {
+  color: #BDBDBD;
+  letter-spacing: 1px; }
+
+.modal input::-ms-input-placeholder,
+.modal textarea::-ms-input-placeholder {
+  color: #BDBDBD;
+  letter-spacing: 1px; }
+
+.modal input::placeholder,
+.modal textarea::placeholder {
+  color: #BDBDBD;
+  letter-spacing: 1px; }
+
+.modal input[type="checkbox"] {
+  width: auto;
+  min-width: auto; }
+
+.modal__title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #222222;
+  margin-bottom: 20px; }
+
+.modal {
+  display: none; }
+
+/*
+ * БЛОК ХЛЕБНЫЕ КРОШКИ
+ */
+.breadcrumbs {
+  margin-left: 10px;
+  max-width: 800px; }
+  @media (min-width: 768px) {
+    .breadcrumbs {
+      margin-left: auto; } }
+  @media (min-width: 1470px) {
+    .breadcrumbs {
+      max-width: 1470px; } }
+
+.breadcrumbs .wrapper {
+  padding: 0; }
+
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0; }
+
+.breadcrumbs__item {
+  position: relative; }
+
+.breadcrumbs__item:not(:first-child) {
+  margin-left: 5px; }
+  .breadcrumbs__item:not(:first-child)::before {
+    content: "\\ ";
+    color: #828282;
+    font-size: 13px; }
+
+.breadcrumbs a {
+  color: #273319;
+  font-size: 11px;
+  line-height: 18px; }
+  .breadcrumbs a:hover {
+    text-decoration: none; }
+
+.breadcrumbs__current a {
+  color: #828282; }

@@ -93,6 +93,8 @@
 .check__label {/*Кастомный чекбокс*/
   padding-left: 30px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .check__input {
