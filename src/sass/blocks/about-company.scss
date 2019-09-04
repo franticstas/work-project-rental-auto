@@ -9,6 +9,12 @@
 
   @include tablet {
     flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    max-width: $desktop-width;
   }
 }
 

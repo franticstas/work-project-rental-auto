@@ -19,8 +19,13 @@
 
   @include media(1120px) {
     order: 1;
-    max-width: 735px;
+    //max-width: 735px;
+    max-width: 450px;
     margin-left: auto;
+  }
+
+  @include desktop {
+    max-width: 735px;
   }
 }
 
@@ -43,6 +48,7 @@
 
 .offers__right-block-img {
   margin: 0 10px;
+  display: none;
 
   @include tablet {
     margin-right: 0;
@@ -50,6 +56,11 @@
   }
 
   @include media(1120px) {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
     margin: 0;
     max-width: 367px;
   }
@@ -79,23 +90,23 @@
 
   @include media(1120px) {
     position: relative;
-    font-size: 35px;
+    font-size: 25px;
   }
 
   @include desktop {
     font-size: 45px;
     min-height: 265px;
-  }
 
-  &::after {
-    position: absolute;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: #C4C4C4;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 20px;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #C4C4C4;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 20px;
+    }
   }
 }
 
@@ -115,11 +126,12 @@
     transform: translateY(-50%);
     background-color: #ffffff;
     z-index: 2;
-    margin-right: 10px;
+    //margin-right: 10px;
+    max-width: 180px;
   }
 
   @include desktop {
-    max-width: 368px;
+    max-width: 380px;
   }
 }
 
@@ -132,6 +144,11 @@
   }
 
   @include media(1120px) {
+    //max-width: 367px;
+    max-width: 280px;
+  }
+
+  @include desktop {
     max-width: 367px;
   }
 }
@@ -155,7 +172,7 @@
 
 .offers__services-list {
   @include tablet {
-    margin-left: 0;
+    //margin-left: 10px;
     height: 100%;
   }
 }
@@ -206,7 +223,7 @@
 
 .offers__services-list-link {
   @include tablet {
-    margin-left: 0;
+    //margin-left: 10px;
   }
 
   &::after {
@@ -217,13 +234,27 @@
 .offers__car {
   margin: 0 10px;
   position: relative;
+
+  @include tablet {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  @include media(1120px) {
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .offers__right .offers__car {
   @include media(1120px) {
     margin: 0;
-    margin-right: 10px;
-    max-width: 730px;
+    //margin-right: 10px;
+    max-width: 450px;
+  }
+
+  @include desktop {
+    max-width: 735px;
   }
 }
 
@@ -300,7 +331,18 @@
 
   @include desktop {
     min-height: 530px;
-    padding-left: 530px;
+    padding-left: 525px;
+  }
+}
+
+.offers__right-block--vip span {
+  @include media(1120px) {
+    padding-left: 30px;
+    //padding-right: 25px;
+  }
+
+  @include desktop {
+    padding-left: 0;
   }
 }
 

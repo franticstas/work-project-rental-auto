@@ -714,8 +714,11 @@ h3 {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1;
-      max-width: 735px;
+      max-width: 450px;
       margin-left: auto; } }
+  @media (min-width: 1470px) {
+    .offers__left {
+      max-width: 735px; } }
 
 .offers__right {
   /*Правый раздел*/
@@ -739,13 +742,18 @@ h3 {
     display: flex; } }
 
 .offers__right-block-img {
-  margin: 0 10px; }
+  margin: 0 10px;
+  display: none; }
   @media (min-width: 768px) {
     .offers__right-block-img {
       margin-right: 0;
       width: 100%; } }
   @media (min-width: 1120px) {
     .offers__right-block-img {
+      display: none; } }
+  @media (min-width: 1470px) {
+    .offers__right-block-img {
+      display: block;
       margin: 0;
       max-width: 367px; } }
 
@@ -773,21 +781,21 @@ h3 {
   @media (min-width: 1120px) {
     .offers__title {
       position: relative;
-      font-size: 35px; } }
+      font-size: 25px; } }
   @media (min-width: 1470px) {
     .offers__title {
       font-size: 45px;
-      min-height: 265px; } }
-  .offers__title::after {
-    position: absolute;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: #C4C4C4;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    margin-left: 20px; }
+      min-height: 265px; }
+      .offers__title::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #C4C4C4;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        margin-left: 20px; } }
 
 .offers__title span {
   max-width: 200px;
@@ -805,10 +813,10 @@ h3 {
               transform: translateY(-50%);
       background-color: #ffffff;
       z-index: 2;
-      margin-right: 10px; } }
+      max-width: 180px; } }
   @media (min-width: 1470px) {
     .offers__title span {
-      max-width: 368px; } }
+      max-width: 380px; } }
 
 .offers__right-info {
   width: 100%; }
@@ -822,6 +830,9 @@ h3 {
           -ms-flex-direction: column;
               flex-direction: column; } }
   @media (min-width: 1120px) {
+    .offers__right-info {
+      max-width: 280px; } }
+  @media (min-width: 1470px) {
     .offers__right-info {
       max-width: 367px; } }
 
@@ -841,7 +852,6 @@ h3 {
 
 @media (min-width: 768px) {
   .offers__services-list {
-    margin-left: 0;
     height: 100%; } }
 
 .offers__list-title {
@@ -879,22 +889,29 @@ h3 {
 .offers__cars-list-link::after {
   background-image: url("../img/sedan.svg"); }
 
-@media (min-width: 768px) {
-  .offers__services-list-link {
-    margin-left: 0; } }
-
 .offers__services-list-link::after {
   background-image: url("../img/page.svg"); }
 
 .offers__car {
   margin: 0 10px;
   position: relative; }
+  @media (min-width: 768px) {
+    .offers__car {
+      max-width: 500px;
+      margin: 0 auto; } }
+  @media (min-width: 1120px) {
+    .offers__car {
+      max-width: none;
+      margin: 0; } }
 
 @media (min-width: 1120px) {
   .offers__right .offers__car {
     margin: 0;
-    margin-right: 10px;
-    max-width: 730px; } }
+    max-width: 450px; } }
+
+@media (min-width: 1470px) {
+  .offers__right .offers__car {
+    max-width: 735px; } }
 
 @media (min-width: 1120px) {
   .offers__left .offers__car {
@@ -965,7 +982,15 @@ h3 {
   @media (min-width: 1470px) {
     .offers__right-block--vip {
       min-height: 530px;
-      padding-left: 530px; } }
+      padding-left: 525px; } }
+
+@media (min-width: 1120px) {
+  .offers__right-block--vip span {
+    padding-left: 30px; } }
+
+@media (min-width: 1470px) {
+  .offers__right-block--vip span {
+    padding-left: 0; } }
 
 .offers__right-block--vip-link {
   color: #222222;
@@ -1094,7 +1119,12 @@ h3 {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; } }
+              flex-direction: row;
+      max-width: 800px;
+      margin: 0 auto; } }
+  @media (min-width: 1470px) {
+    .about-company .wrapper {
+      max-width: 1470px; } }
 
 @media (min-width: 768px) {
   .about-company__left,
