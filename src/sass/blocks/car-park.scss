@@ -33,7 +33,7 @@
 }
 
 .car-park__img-block {
-
+  max-height: 314px;
 }
 
 .car-park__img-block img {
@@ -47,10 +47,19 @@
   color: #ffffff;
   font-size: 18px;
   min-height: 74px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   padding-left: 25px;
   font-weight: 700;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
 }
 
 .car-park__link-text {
