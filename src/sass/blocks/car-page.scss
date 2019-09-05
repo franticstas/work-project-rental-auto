@@ -1,0 +1,87 @@
+/*
+ * Стили для карточки машины
+ */
+.car-block {
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+
+  @include desktop {
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 70px;
+  }
+}
+
+.car-block__left {
+  max-width: 720px;
+  width: 100%;
+}
+
+.car-block__img-block {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.car-block__slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.car-block__slider-pagination {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 180px;
+  height: 50px;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.car-swiper-button {
+  background-image: url("../img/arrow-pag.svg");
+  background-size: 17px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  z-index: 11;
+}
+
+.car-swiper-button-next {
+  transform: rotate(180deg);
+}
+
+.car-block__slider .swiper-pagination {
+  font-size: 18px;
+  font-weight: 700;
+  color: #BDBDBD;
+}
+
+.car-block__slider .swiper-pagination-current {
+  color: $black;
+}
+
+.car-block__buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.car-block__buttons a {
+  margin-top: 10px;
+}
+
+.car-block__buttons .red-button {
+  margin-left: 15px;
+}
+
+.car-block__right {
+  max-width: 720px;
+}

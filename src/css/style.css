@@ -409,10 +409,23 @@ h3 {
   background-color: #FE584A;
   color: #ffffff;
   border: none;
-  padding: 15px 60px;
+  padding: 20px 0;
   font-size: 18px;
   font-weight: 700;
-  display: inline-block; }
+  display: inline-block;
+  min-width: 220px;
+  text-align: center; }
+
+.simple-button {
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #BDBDBD;
+  color: #222222;
+  min-width: 220px;
+  text-align: center; }
 
 @media (min-width: 1470px) {
   h1.section-title {
@@ -464,6 +477,14 @@ h3 {
   .section-title__right {
     margin-right: auto;
     width: 50%; } }
+
+.box-shadow-wrapper {
+  -webkit-box-shadow: inset 0px -20px 30px rgba(0, 0, 0, 0.07);
+          box-shadow: inset 0px -20px 30px rgba(0, 0, 0, 0.07);
+  padding-bottom: 25px; }
+  @media (min-width: 1470px) {
+    .box-shadow-wrapper {
+      padding-bottom: 55px; } }
 
 /*
  * Стили хедера
@@ -1535,16 +1556,245 @@ h3 {
 .breadcrumbs__item:not(:first-child) {
   margin-left: 5px; }
   .breadcrumbs__item:not(:first-child)::before {
-    content: "\\ ";
-    color: #828282;
-    font-size: 13px; }
+    content: "/ ";
+    color: #BDBDBD;
+    font-size: 16px; }
 
 .breadcrumbs a {
-  color: #273319;
-  font-size: 11px;
+  color: #BDBDBD;
+  font-size: 16px;
   line-height: 18px; }
   .breadcrumbs a:hover {
     text-decoration: none; }
 
 .breadcrumbs__current a {
-  color: #828282; }
+  color: #BDBDBD; }
+
+/*
+ * Стили для страницы Автопарк
+ */
+.car-park__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (min-width: 1470px) {
+    .car-park__list {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+
+.car-park__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 470px;
+  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  margin-top: 0; }
+  @media (min-width: 768px) {
+    .car-park__item {
+      margin: 20px;
+      margin-top: 0; } }
+  @media (min-width: 1470px) {
+    .car-park__item {
+      margin: 10px;
+      margin-top: 0;
+      margin-bottom: 30px; } }
+
+.car-park__img-block img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.car-park__link {
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 18px;
+  min-height: 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 25px;
+  font-weight: 700; }
+
+.car-park__link-text {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.car-park__link-arrow {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 77px;
+          flex: 0 0 77px;
+  height: auto;
+  background-color: #ffffff;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/*
+ * Пагинация
+ */
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  margin-top: 15px; }
+  @media (min-width: 768px) {
+    .pagination {
+      margin-top: 30px; } }
+
+.pagination__prew {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/arrow-pag.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 25px; }
+  .pagination__prew:active, .pagination__prew:hover, .pagination__prew:focus {
+    outline: 0;
+    outline-offset: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9); }
+
+.pagination__current {
+  font-size: 48px;
+  color: #222222; }
+
+.pagination__last {
+  color: #979797;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-top: 10px; }
+  .pagination__last::before {
+    content: "/ "; }
+
+.pagination__next {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/arrow-pag.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: 25px; }
+  .pagination__next:active, .pagination__next:hover, .pagination__next:focus {
+    outline: 0;
+    outline-offset: 0;
+    -webkit-transform: rotate(180deg) scale(0.9);
+            transform: rotate(180deg) scale(0.9); }
+
+/*
+ * Стили для карточки машины
+ */
+.car-block {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px; }
+  @media (min-width: 1470px) {
+    .car-block {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0;
+      margin-bottom: 70px; } }
+
+.car-block__left {
+  max-width: 720px;
+  width: 100%; }
+
+.car-block__img-block {
+  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  width: 100%; }
+
+.car-block__slider img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+.car-block__slider-pagination {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 180px;
+  height: 50px;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.car-swiper-button {
+  background-image: url("../img/arrow-pag.svg");
+  background-size: 17px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  z-index: 11; }
+
+.car-swiper-button-next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.car-block__slider .swiper-pagination {
+  font-size: 18px;
+  font-weight: 700;
+  color: #BDBDBD; }
+
+.car-block__slider .swiper-pagination-current {
+  color: #222222; }
+
+.car-block__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.car-block__buttons a {
+  margin-top: 10px; }
+
+.car-block__buttons .red-button {
+  margin-left: 15px; }
+
+.car-block__right {
+  max-width: 720px; }

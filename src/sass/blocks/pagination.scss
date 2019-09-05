@@ -1,0 +1,65 @@
+/*
+ * Пагинация
+ */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-top: 15px;
+
+  @include tablet {
+    margin-top: 30px;
+  }
+}
+
+.pagination__prew {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/arrow-pag.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 25px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    transform: scale(0.9);
+  }
+}
+
+.pagination__current {
+  font-size: 48px;
+  color: $black;
+}
+
+.pagination__last {
+  color: #979797;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-top: 10px;
+
+  &::before {
+    content: "/ ";
+  }
+}
+
+.pagination__next {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/arrow-pag.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+  margin-left: 25px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    transform: rotate(180deg) scale(0.9);
+  }
+}

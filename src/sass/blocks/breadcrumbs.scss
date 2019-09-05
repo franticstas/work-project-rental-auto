@@ -36,15 +36,15 @@
   margin-left: 5px;
 
   &::before {
-    content: "\\ ";
-    color: #828282;
-    font-size: 13px;
+    content: "/ ";
+    color: #BDBDBD;
+    font-size: 16px;
   }
 }
 
 .breadcrumbs a {
-  color: #273319;
-  font-size: 11px;
+  color: #BDBDBD;
+  font-size: 16px;
   line-height: 18px;
 
   &:hover {
@@ -53,5 +53,5 @@
 }
 
 .breadcrumbs__current a {
-  color: #828282;
+  color: #BDBDBD;
 }

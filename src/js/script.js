@@ -12,3 +12,14 @@ $('.mask').click(function() {
   $('.mask').removeClass('show');
 });
 
+//Слайдер в карточке товара
+var swiperCarBlock = new Swiper('.car-block__slider', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.car-swiper-button-next',
+    prevEl: '.car-swiper-button-prev',
+  },
+});
