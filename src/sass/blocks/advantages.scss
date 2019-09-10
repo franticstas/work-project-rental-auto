@@ -1,11 +1,13 @@
 /*
- * Стили для секции Преимущества
+ * Стили для секции Преимущества на главной
  */
-.advantages .wrapper {
+.advantages .wrapper,
+.new-advantages .wrapper {
   padding: 0 10px;
 }
 
-.advantages__list {
+.advantages__list,
+.new-advantages__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -15,7 +17,8 @@
   }
 }
 
-.advantages__item {
+.advantages__item,
+.new-advantages__item {
   border: 1px solid #E0E0E0;
   padding: 26px 30px;
   margin: 10px;
@@ -85,5 +88,101 @@
 .advantages__item--quick-pick span {
   &::before {
     background-image: url("../img/adv6.svg");
+  }
+}
+
+/*
+ * Стили для секции Преимущества на остальных
+ */
+
+.new-advantages {
+  padding-bottom: 30px;
+  padding-top: 20px;
+
+  @include tablet {
+    padding-bottom: 55px;
+  }
+
+  @include desktop {
+    padding-bottom: 115px;
+  }
+}
+
+.new-advantages__list {
+  margin-top: 30px;
+
+  @include desktop {
+    margin-top: 80px;
+  }
+}
+
+.new-advantages__item {
+  position: relative;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 130px;
+    border-bottom: 1px solid #C4C4C4;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.new-advantages__item span {
+  font-size: 16px;
+  color: $black;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 150px;
+  min-height: 54px;
+  max-width: 315px;
+  display: inline-block;
+}
+
+.new-advantages__item-things {
+  &::after {
+    background-image: url("../img/vip-adv1.svg");
+  }
+}
+
+.new-advantages__item-civility {
+  &::after {
+    background-image: url("../img/vip-adv2.svg");
+  }
+}
+
+.new-advantages__item-accuracy {
+  &::after {
+    background-image: url("../img/vip-adv3.svg");
+  }
+}
+
+.new-advantages__item-large {
+  &::after {
+    background-image: url("../img/vip-adv4.svg");
+  }
+}
+
+.new-advantages__item-purity {
+  &::after {
+    background-image: url("../img/vip-adv5.svg");
+  }
+}
+
+.new-advantages__item-experience {
+  &::after {
+    background-image: url("../img/vip-adv6.svg");
+  }
+}
+
+.new-advantages__item-mercedes {
+  &::after {
+    background-image: url("../img/vip-adv7.svg");
   }
 }

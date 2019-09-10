@@ -375,3 +375,55 @@
 .offers__right-block--vip .offers__title {
   min-height: auto;
 }
+
+.offers__right-block-text {
+  text-align: left;
+  //margin: 0 10px;
+  background-color: #ffffff;
+  padding: 20px 10px;
+
+  @include media(1120px) {
+    margin: 0;
+    //margin-right: 10px;
+    padding-left: 30px;
+    max-width: 495px;
+  }
+
+  @include desktop {
+    max-width: 735px;
+    padding-left: 120px;
+    padding-top: 170px;
+    padding-right: 135px;
+  }
+}
+
+.offers__right-block-text__title {
+  color: $black;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  @include media(1120px) {
+    font-size: 25px;
+  }
+
+  @include desktop {
+    font-size: 32px;
+  }
+}
+
+.offers__right-block-text__text {
+  font-size: 16px;
+}
+
+.vip-offers {
+  margin-top: 30px;
+
+  @include tablet {
+    margin-top: 60px;
+  }
+
+  @include desktop {
+    margin-top: 120px;
+  }
+}
