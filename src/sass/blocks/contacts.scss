@@ -1,0 +1,57 @@
+/*
+ * Стили для страницы Контакты
+ */
+.contacts {
+  background-image: none;
+}
+
+.contacts__map {
+  height: 155px;
+
+  @include tablet {
+    height: 250px;
+  }
+
+  @include desktop {
+    height: 500px;
+  }
+}
+
+.contacts-block {
+  text-align: center;
+  padding-top: 15px;
+
+  @include tablet {
+    order: 2;
+    text-align: right;
+    padding-right: 10px;
+    flex: 1 1 50%;
+  }
+}
+
+.contacts-block__title {
+  font-size: 24px;
+  font-weight: 800;
+  color: $black;
+  margin-bottom: 5px;
+}
+
+.contacts-block__phone {
+  font-size: 36px;
+  color: $black;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.contacts-block address {
+  font-size: 24px;
+  color: $black;
+  margin-bottom: 30px;
+}
+
+.contacts-block__email {
+  font-size: 24px;
+  color: $red;
+  display: inline-block;
+  margin-bottom: 30px;
+}

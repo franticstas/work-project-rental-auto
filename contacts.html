@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Прокат Авто" />
+  <meta name="description" content="Прокат авто" />
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="src/css/swiper.min.css">
+  <title>Прокат авто</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <a class="header__logo" href="#">
+        <img src="src/img/logo.svg" alt="">
+      </a>
+      <nav class="header__nav">
+        <button class="header__nav-button">
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+        </button>
+        <ul class="header__nav-list none__list-style">
+          <li class="header__nav-item"><a href="#">О компании</a></li>
+          <li class="header__nav-item"><a href="#">Автопарк</a></li>
+          <li class="header__nav-item"><a href="#">Услуги</a></li>
+          <li class="header__nav-item"><a href="#">Трансфер</a></li>
+          <li class="header__nav-item"><a href="#">Преимущества</a></li>
+          <li class="header__nav-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+7(909)422-55-11" class="header__phone">+7 (111) 111-11-11</a>
+    </div>
+  </header>
+  <h1 class="section-title">
+      <span class="section-title__left-line">
+        <span class="section-title__left">Контакты</span>
+      </span>
+    <span class="section-title__right"></span>
+  </h1>
+  <!--   ******************** ХЛЕБНЫЕ КРОШКИ ***************************-->
+  <div class="breadcrumbs wrapper">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a href="#">Главная</a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__current">
+        <a>Контакты</a>
+      </li>
+    </ul>
+  </div>
+  <section class="write-us contacts wrapper">
+    <div class="write-us__wrapper">
+      <div class="contacts-block">
+        <div class="contacts-block__title">Телефон</div>
+        <a class="contacts-block__phone" href="tel:+7 (909) 422 55 11">+7 (909) 422 55 11</a>
+        <div class="contacts-block__title">Адрес:</div>
+        <address>г. Ростов-на-Дону, пер. Аааааааа 55</address>
+        <div class="contacts-block__title">Email:</div>
+        <a class="contacts-block__email" href="mailto:rentalauto61@yandex.ru">rentalauto61@yandex.ru</a>
+      </div>
+      <div class="write-us__form-block">
+        <form>
+          <label>
+            <input type="text" placeholder="Имя">
+          </label>
+          <label>
+            <input type="tel" placeholder="Телефон">
+          </label>
+          <label>
+            <textarea name="" cols="30" rows="10" placeholder="Комментарии"></textarea>
+          </label>
+          <label class="check__label">
+            <input class="check__input" type="checkbox">
+            <span class="check__box"></span>
+            <span>Я согласен с <a href="#">политикой конфеденциальности</a></span>
+          </label>
+          <button class="red-button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="contacts__map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86685.73628075041!2d39.7262848!3d47.2375296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1567507636953!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__left">
+          <ul class="footer__nav-list none__list-style">
+            <li class="footer__nav-item"><a href="#">О компании</a></li>
+            <li class="footer__nav-item"><a href="#">Автопарк</a></li>
+            <li class="footer__nav-item"><a href="#">Услуги</a></li>
+            <li class="footer__nav-item"><a href="#">Трансфер</a></li>
+            <li class="footer__nav-item"><a href="#">Преимущества</a></li>
+            <li class="footer__nav-item"><a href="#">Контакты</a></li>
+          </ul>
+          <a class="header__logo" href="#">
+            <img src="src/img/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="footer__right">
+          <div class="footer__title">Аренда автомобилей с водителем</div>
+          <a href="tel:+7 (111) 111 11 11 ">+7 (111) 111 11 11</a>
+          <a href="mailto:xxxxxxxxxx@yandex.ru">xxxxxxxxxxx@yandex.ru</a>
+          <address>г. Ростов-на-Дону, пер. Аааааааа 55</address>
+          <div class="footer__social-links">
+            <a class="footer__fb" href="#"></a>
+            <a class="footer__insta" href="#"></a>
+            <a class="footer__vk" href="#"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="">
+          2019  Rental Auto
+        </div>
+        <div class="">
+          Cоздание и продвижение сайтов <a href="#">SKgroups</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<div class="mask"></div>
+<div class="modal modal-order" id="modal-order">
+  <div class="modal__title">Заполните форму</div>
+  <form>
+    <label>
+      <input type="text" placeholder="Имя">
+    </label>
+    <label>
+      <input type="tel" placeholder="Телефон">
+    </label>
+    <label>
+      <textarea name="" cols="30" rows="10" placeholder="Комментарии"></textarea>
+    </label>
+    <label class="check__label">
+      <input class="check__input" type="checkbox">
+      <span class="check__box"></span>
+      <span>Я согласен с <a href="#">политикой конфеденциальности</a></span>
+    </label>
+    <button class="red-button" type="submit">Отправить</button>
+  </form>
+</div>
+  <!--  ************ Скрипты ***********-->
+  <script src="src/js/jquery-3.4.1.min.js"></script>
+  <script src="src/js/jquery.fancybox.min.js"></script>
+  <script src="src/js/swiper.min.js"></script>
+  <script src="src/js/script.js"></script>
+</body>
+</html>

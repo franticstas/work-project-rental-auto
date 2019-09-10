@@ -1,0 +1,57 @@
+/*
+ * Стили для страницы Трансфер
+ */
+.transfer-table {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 25px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  @include desktop {
+    margin-bottom: 150px;
+  }
+}
+
+.transfer-table__hidden {
+  overflow-x: auto;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.transfer-table table {
+  border-collapse: collapse;
+  color: $black;
+}
+
+.transfer-table th {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  min-width: 150px;
+  border-bottom: 1px solid #1C1C1C;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  padding-left: 25px;
+  padding-right: 5px;
+
+  @include tablet {
+    min-width: 250px;
+  }
+}
+
+.transfer-table td {
+  border-bottom: 1px solid #1C1C1C;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.transfer-table th:first-child,
+.transfer-table td:first-child {
+  text-align: left;
+  padding-left: 10px;
+}

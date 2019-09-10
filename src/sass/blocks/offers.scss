@@ -427,3 +427,18 @@
     margin-top: 120px;
   }
 }
+
+.offers__big-img {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.offers__big-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

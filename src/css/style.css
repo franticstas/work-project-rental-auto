@@ -1159,6 +1159,18 @@ h3 {
     .vip-offers {
       margin-top: 120px; } }
 
+.offers__big-img {
+  padding-left: 10px;
+  padding-right: 10px; }
+  @media (min-width: 1470px) {
+    .offers__big-img {
+      padding: 0; } }
+
+.offers__big-img img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
 /*
  * Стили для секции Преимущества на главной
  */
@@ -1995,3 +2007,104 @@ h3 {
   -webkit-box-shadow: 0px -20px 30px rgba(0, 0, 0, 0.07);
           box-shadow: 0px -20px 30px rgba(0, 0, 0, 0.07);
   padding-top: 45px; }
+
+/*
+ * Стили для страницы Контакты
+ */
+.contacts {
+  background-image: none; }
+
+.contacts__map {
+  height: 155px; }
+  @media (min-width: 768px) {
+    .contacts__map {
+      height: 250px; } }
+  @media (min-width: 1470px) {
+    .contacts__map {
+      height: 500px; } }
+
+.contacts-block {
+  text-align: center;
+  padding-top: 15px; }
+  @media (min-width: 768px) {
+    .contacts-block {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      text-align: right;
+      padding-right: 10px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 50%;
+              flex: 1 1 50%; } }
+
+.contacts-block__title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #222222;
+  margin-bottom: 5px; }
+
+.contacts-block__phone {
+  font-size: 36px;
+  color: #222222;
+  margin-bottom: 30px;
+  display: inline-block; }
+
+.contacts-block address {
+  font-size: 24px;
+  color: #222222;
+  margin-bottom: 30px; }
+
+.contacts-block__email {
+  font-size: 24px;
+  color: #FE584A;
+  display: inline-block;
+  margin-bottom: 30px; }
+
+/*
+ * Стили для страницы Трансфер
+ */
+.transfer-table {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 25px; }
+  @media (min-width: 768px) {
+    .transfer-table {
+      margin-bottom: 50px; } }
+  @media (min-width: 1470px) {
+    .transfer-table {
+      margin-bottom: 150px; } }
+
+.transfer-table__hidden {
+  overflow-x: auto;
+  max-width: 900px;
+  margin: 0 auto; }
+
+.transfer-table table {
+  border-collapse: collapse;
+  color: #222222; }
+
+.transfer-table th {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  min-width: 150px;
+  border-bottom: 1px solid #1C1C1C;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  padding-left: 25px;
+  padding-right: 5px; }
+  @media (min-width: 768px) {
+    .transfer-table th {
+      min-width: 250px; } }
+
+.transfer-table td {
+  border-bottom: 1px solid #1C1C1C;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  text-align: right;
+  padding-right: 10px; }
+
+.transfer-table th:first-child,
+.transfer-table td:first-child {
+  text-align: left;
+  padding-left: 10px; }
