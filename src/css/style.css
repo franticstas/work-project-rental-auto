@@ -1321,6 +1321,15 @@ h3 {
 .new-advantages__item-mercedes::after {
   background-image: url("../img/vip-adv7.svg"); }
 
+.new-advantages__item-taxi-transfer::after {
+  background-image: url("../img/vip-adv8.svg"); }
+
+.new-advantages__item-fast::after {
+  background-image: url("../img/vip-adv9.svg"); }
+
+.new-advantages__item-payment::after {
+  background-image: url("../img/vip-adv10.svg"); }
+
 /*
  * Секция о компании
  */
