@@ -141,6 +141,10 @@
 
 .headline-block__title span {
   font-weight: 700;
+
+  @include desktop {
+    font-size: 45px;
+  }
 }
 
 .headline-block a {
@@ -154,5 +158,35 @@
   @include desktop {
     margin-top: 15px;
     margin-bottom: 186px;
+  }
+}
+
+.headline-block-about-company {
+  @include tablet {
+    background-image: url("../img/about-company.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+  }
+
+  @include desktop {
+    background-size: 1100px;
+  }
+}
+
+.headline-block-about-company .headline-block__title {
+  color: $black;
+
+  @include desktop {
+    margin-top: 50px;
+    font-size: 45px;
+    font-weight: 700;
+  }
+}
+
+.headline-block-about-company .headline-block__title span {
+  @include desktop {
+    font-size: 32px;
+    font-weight: 500;
   }
 }

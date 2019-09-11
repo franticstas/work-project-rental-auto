@@ -95,13 +95,24 @@ h3 {
 .red-button {
   background-color: $red;
   color: #ffffff;
-  border: none;
   padding: 20px 0;
+  padding-top: 22px;
   font-size: 18px;
   font-weight: 700;
   display: inline-block;
   min-width: 220px;
   text-align: center;
+  border: 1px solid $red;
+  cursor: pointer;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-color: transparent;
+    color: $red;
+  }
 }
 
 .simple-button {
@@ -114,6 +125,16 @@ h3 {
   color: $black;
   min-width: 220px;
   text-align: center;
+  cursor: pointer;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-color: #BDBDBD;
+    color: #ffffff;
+  }
 }
 
 h1.section-title {
@@ -167,21 +188,18 @@ h1.section-title {
 }
 
 .section-title__left {
-
-
   @include desktop {
     position: relative;
     z-index: 2;
-    max-width: 730px;
+    max-width: 740px;
     margin-left: auto;
     display: block;
     background-color: #ffffff;
+    box-shadow: -15px 0px 0 #ffffff;
   }
 }
 
 .section-title__right {
-
-
   @include desktop {
     margin-right: auto;
     width: 50%;

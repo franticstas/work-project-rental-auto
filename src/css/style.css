@@ -408,13 +408,20 @@ h3 {
 .red-button {
   background-color: #FE584A;
   color: #ffffff;
-  border: none;
   padding: 20px 0;
+  padding-top: 22px;
   font-size: 18px;
   font-weight: 700;
   display: inline-block;
   min-width: 220px;
-  text-align: center; }
+  text-align: center;
+  border: 1px solid #FE584A;
+  cursor: pointer; }
+  .red-button:active, .red-button:hover, .red-button:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-color: transparent;
+    color: #FE584A; }
 
 .simple-button {
   padding: 20px 0;
@@ -425,7 +432,13 @@ h3 {
   border: 1px solid #BDBDBD;
   color: #222222;
   min-width: 220px;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
+  .simple-button:active, .simple-button:hover, .simple-button:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-color: #BDBDBD;
+    color: #ffffff; }
 
 @media (min-width: 1470px) {
   h1.section-title {
@@ -468,10 +481,12 @@ h3 {
   .section-title__left {
     position: relative;
     z-index: 2;
-    max-width: 730px;
+    max-width: 740px;
     margin-left: auto;
     display: block;
-    background-color: #ffffff; } }
+    background-color: #ffffff;
+    -webkit-box-shadow: -15px 0px 0 #ffffff;
+            box-shadow: -15px 0px 0 #ffffff; } }
 
 @media (min-width: 1470px) {
   .section-title__right {
@@ -528,7 +543,11 @@ h3 {
   /*Меню*/ }
   @media (min-width: 768px) {
     .header__nav {
+      width: 100%;
       height: auto; } }
+  @media (min-width: 1470px) {
+    .header__nav {
+      margin-left: 150px; } }
 
 .header__nav-button {
   /*Кнопка меню*/ }
@@ -773,6 +792,9 @@ h3 {
 
 .headline-block__title span {
   font-weight: 700; }
+  @media (min-width: 1470px) {
+    .headline-block__title span {
+      font-size: 45px; } }
 
 .headline-block a {
   margin-top: 25px;
@@ -784,6 +806,30 @@ h3 {
     .headline-block a {
       margin-top: 15px;
       margin-bottom: 186px; } }
+
+@media (min-width: 768px) {
+  .headline-block-about-company {
+    background-image: url("../img/about-company.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom; } }
+
+@media (min-width: 1470px) {
+  .headline-block-about-company {
+    background-size: 1100px; } }
+
+.headline-block-about-company .headline-block__title {
+  color: #222222; }
+  @media (min-width: 1470px) {
+    .headline-block-about-company .headline-block__title {
+      margin-top: 50px;
+      font-size: 45px;
+      font-weight: 700; } }
+
+@media (min-width: 1470px) {
+  .headline-block-about-company .headline-block__title span {
+    font-size: 32px;
+    font-weight: 500; } }
 
 /*
  * Стили Предложений
@@ -915,7 +961,9 @@ h3 {
       max-width: 180px; } }
   @media (min-width: 1470px) {
     .offers__title span {
-      max-width: 380px; } }
+      max-width: 380px;
+      -webkit-box-shadow: 15px 0px 0 #ffffff;
+              box-shadow: 15px 0px 0 #ffffff; } }
 
 .offers__right-info {
   width: 100%; }
@@ -930,7 +978,7 @@ h3 {
               flex-direction: column; } }
   @media (min-width: 1120px) {
     .offers__right-info {
-      max-width: 280px; } }
+      max-width: 450px; } }
   @media (min-width: 1470px) {
     .offers__right-info {
       max-width: 367px; } }
@@ -1171,6 +1219,11 @@ h3 {
   width: 100%;
   height: auto; }
 
+.offers a:active, .offers a:hover, .offers a:focus {
+  outline: 0;
+  outline-offset: 0;
+  text-decoration: underline; }
+
 /*
  * Стили для секции Преимущества на главной
  */
@@ -1235,7 +1288,9 @@ h3 {
     content: "";
     width: 50px;
     height: 50px;
-    left: -60px; }
+    left: -60px;
+    background-repeat: no-repeat;
+    background-position: center; }
 
 .advantages__item--premium-lineup span::before {
   background-image: url("../img/adv1.svg"); }
@@ -1330,6 +1385,12 @@ h3 {
 .new-advantages__item-payment::after {
   background-image: url("../img/vip-adv10.svg"); }
 
+.new-advantages__item-guarantee::after {
+  background-image: url("../img/vip-adv11.svg"); }
+
+.new-advantages__item-discount::after {
+  background-image: url("../img/vip-adv12.svg"); }
+
 /*
  * Секция о компании
  */
@@ -1405,6 +1466,10 @@ h3 {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; } }
+
+@media (min-width: 1000px) {
+  .write-us__form-block {
+    min-width: 595px; } }
 
 @media (min-width: 1470px) {
   .write-us__form-block {
@@ -1486,9 +1551,16 @@ h3 {
     top: 0;
     right: 0; } }
 
+#map {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
 .check__label {
   /*Кастомный чекбокс*/
   padding-left: 30px;
+  margin-bottom: 10px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1721,6 +1793,11 @@ h3 {
 .modal {
   display: none; }
 
+.modal__scroll {
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+  padding: 40px 20px 0 20px; }
+
 /*
  * БЛОК ХЛЕБНЫЕ КРОШКИ
  */
@@ -1797,6 +1874,7 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 470px;
+  min-width: 450px;
   -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -1976,8 +2054,8 @@ h3 {
   z-index: 11; }
 
 .car-swiper-button-next {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+  -webkit-transform: rotate(180deg) translateY(-2px);
+          transform: rotate(180deg) translateY(-2px); }
 
 .car-block__slider .swiper-pagination {
   font-size: 18px;

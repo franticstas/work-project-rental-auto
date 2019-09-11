@@ -132,6 +132,7 @@
 
   @include desktop {
     max-width: 380px;
+    box-shadow: 15px 0px 0 #ffffff;
   }
 }
 
@@ -145,7 +146,7 @@
 
   @include media(1120px) {
     //max-width: 367px;
-    max-width: 280px;
+    max-width: 450px;
   }
 
   @include desktop {
@@ -441,4 +442,14 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.offers a {
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
 }
