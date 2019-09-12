@@ -48,6 +48,7 @@
 .index-headline-block h1 {
   font-size: 20px;
   text-align: left;
+  max-width: 85%;
   color: $black;
 
   @include media(550px) {
@@ -55,11 +56,16 @@
     font-size: 25px;
   }
 
+  @include tablet {
+    max-width: 55%;
+  }
+
   @include media(950px) {
     font-size: 35px;
   }
 
   @include desktop {
+    max-width: 55%;
     font-size: 50px;
     margin-top: 225px;
   }
