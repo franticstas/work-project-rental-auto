@@ -38,59 +38,60 @@
   font-size: 16px;
   color: $black;
   font-weight: 700;
-  border-left: 1px solid #C4C4C4;
-  padding-left: 10px;
-  margin-left: 50px;
+  //border-left: 1px solid #C4C4C4;
+  padding-left: 70px;
+  //margin-left: 50px;
   min-height: 54px;
   display: flex;
   align-items: center;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: left center;
 
   &::before {
     position: absolute;
     content: "";
-    width: 50px;
-    height: 50px;
-    left: -60px;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 1px;
+    height: 100%;
+    left: 60px;
+    background-color: #C4C4C4;
   }
 }
 
 .advantages__item--premium-lineup span {
-  &::before {
+
     background-image: url("../img/adv1.svg");
-  }
+
 }
 
 .advantages__item--car-park span {
-  &::before {
+
     background-image: url("../img/adv2.svg");
-  }
+
 }
 
 .advantages__item--experience span {
-  &::before {
+
     background-image: url("../img/adv3.svg");
-  }
+
 }
 
 .advantages__item--discount span {
-  &::before {
+
     background-image: url("../img/adv4.svg");
-  }
+
 }
 
 .advantages__item--guarantee span {
-  &::before {
+
     background-image: url("../img/adv5.svg");
-  }
+
 }
 
 .advantages__item--quick-pick span {
-  &::before {
+
     background-image: url("../img/adv6.svg");
-  }
+
 }
 
 /*
@@ -121,6 +122,8 @@
 .new-advantages__item {
   position: relative;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center 40px;
 
   &::after {
     position: absolute;
@@ -131,8 +134,7 @@
     left: 50%;
     transform: translateX(-50%);
     top: 0;
-    background-repeat: no-repeat;
-    background-position: center;
+
   }
 }
 
@@ -148,73 +150,73 @@
 }
 
 .new-advantages__item-things {
-  &::after {
+
     background-image: url("../img/vip-adv1.svg");
-  }
+
 }
 
 .new-advantages__item-civility {
-  &::after {
+
     background-image: url("../img/vip-adv2.svg");
-  }
+
 }
 
 .new-advantages__item-accuracy {
-  &::after {
+
     background-image: url("../img/vip-adv3.svg");
-  }
+
 }
 
 .new-advantages__item-large {
-  &::after {
+
     background-image: url("../img/vip-adv4.svg");
-  }
+
 }
 
 .new-advantages__item-purity {
-  &::after {
+
     background-image: url("../img/vip-adv5.svg");
-  }
+
 }
 
 .new-advantages__item-experience {
-  &::after {
+
     background-image: url("../img/vip-adv6.svg");
-  }
+
 }
 
 .new-advantages__item-mercedes {
-  &::after {
+
     background-image: url("../img/vip-adv7.svg");
-  }
+
 }
 
 .new-advantages__item-taxi-transfer {
-  &::after {
+
     background-image: url("../img/vip-adv8.svg");
-  }
+
 }
 
 .new-advantages__item-fast {
-  &::after {
+
     background-image: url("../img/vip-adv9.svg");
-  }
+
 }
 
 .new-advantages__item-payment {
-  &::after {
+
     background-image: url("../img/vip-adv10.svg");
-  }
+
 }
 
 .new-advantages__item-guarantee {
-  &::after {
+
     background-image: url("../img/vip-adv11.svg");
-  }
+
 }
 
 .new-advantages__item-discount {
-  &::after {
+
     background-image: url("../img/vip-adv12.svg");
-  }
+
 }

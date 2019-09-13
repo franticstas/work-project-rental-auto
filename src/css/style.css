@@ -1277,9 +1277,7 @@ h3 {
   font-size: 16px;
   color: #222222;
   font-weight: 700;
-  border-left: 1px solid #C4C4C4;
-  padding-left: 10px;
-  margin-left: 50px;
+  padding-left: 70px;
   min-height: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1287,32 +1285,33 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative; }
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: left center; }
   .advantages__item span::before {
     position: absolute;
     content: "";
-    width: 50px;
-    height: 50px;
-    left: -60px;
-    background-repeat: no-repeat;
-    background-position: center; }
+    width: 1px;
+    height: 100%;
+    left: 60px;
+    background-color: #C4C4C4; }
 
-.advantages__item--premium-lineup span::before {
+.advantages__item--premium-lineup span {
   background-image: url("../img/adv1.svg"); }
 
-.advantages__item--car-park span::before {
+.advantages__item--car-park span {
   background-image: url("../img/adv2.svg"); }
 
-.advantages__item--experience span::before {
+.advantages__item--experience span {
   background-image: url("../img/adv3.svg"); }
 
-.advantages__item--discount span::before {
+.advantages__item--discount span {
   background-image: url("../img/adv4.svg"); }
 
-.advantages__item--guarantee span::before {
+.advantages__item--guarantee span {
   background-image: url("../img/adv5.svg"); }
 
-.advantages__item--quick-pick span::before {
+.advantages__item--quick-pick span {
   background-image: url("../img/adv6.svg"); }
 
 /*
@@ -1336,7 +1335,9 @@ h3 {
 
 .new-advantages__item {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center 40px; }
   .new-advantages__item::after {
     position: absolute;
     content: "";
@@ -1346,9 +1347,7 @@ h3 {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 0;
-    background-repeat: no-repeat;
-    background-position: center; }
+    top: 0; }
 
 .new-advantages__item span {
   font-size: 16px;
@@ -1360,40 +1359,40 @@ h3 {
   max-width: 315px;
   display: inline-block; }
 
-.new-advantages__item-things::after {
+.new-advantages__item-things {
   background-image: url("../img/vip-adv1.svg"); }
 
-.new-advantages__item-civility::after {
+.new-advantages__item-civility {
   background-image: url("../img/vip-adv2.svg"); }
 
-.new-advantages__item-accuracy::after {
+.new-advantages__item-accuracy {
   background-image: url("../img/vip-adv3.svg"); }
 
-.new-advantages__item-large::after {
+.new-advantages__item-large {
   background-image: url("../img/vip-adv4.svg"); }
 
-.new-advantages__item-purity::after {
+.new-advantages__item-purity {
   background-image: url("../img/vip-adv5.svg"); }
 
-.new-advantages__item-experience::after {
+.new-advantages__item-experience {
   background-image: url("../img/vip-adv6.svg"); }
 
-.new-advantages__item-mercedes::after {
+.new-advantages__item-mercedes {
   background-image: url("../img/vip-adv7.svg"); }
 
-.new-advantages__item-taxi-transfer::after {
+.new-advantages__item-taxi-transfer {
   background-image: url("../img/vip-adv8.svg"); }
 
-.new-advantages__item-fast::after {
+.new-advantages__item-fast {
   background-image: url("../img/vip-adv9.svg"); }
 
-.new-advantages__item-payment::after {
+.new-advantages__item-payment {
   background-image: url("../img/vip-adv10.svg"); }
 
-.new-advantages__item-guarantee::after {
+.new-advantages__item-guarantee {
   background-image: url("../img/vip-adv11.svg"); }
 
-.new-advantages__item-discount::after {
+.new-advantages__item-discount {
   background-image: url("../img/vip-adv12.svg"); }
 
 /*
