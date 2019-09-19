@@ -70,18 +70,44 @@
 
 .car-block__buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
+
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .car-block__buttons a {
+  margin: 0 5px;
   margin-top: 10px;
 }
 
 .car-block__buttons .red-button {
-  margin-left: 15px;
+
 }
 
 .car-block__right {
   max-width: 720px;
+}
+
+.car-block-price-btn {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.car-block-price {
+  text-align: center;
+  font-size: 20px;
+
+  @include tablet {
+    font-size: 30px;
+  }
 }

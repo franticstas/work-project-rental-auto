@@ -1,4 +1,4 @@
-new WOW().init();
+//new WOW().init();
 
 //Мобильное меню
 $('.header__nav-button').click(function() {
