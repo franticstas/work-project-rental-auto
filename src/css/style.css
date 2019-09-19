@@ -591,6 +591,10 @@ h3 {
     color: #ffffff;
     background-color: #FE584A; }
 
+.header__nav-item.active a {
+  color: #ffffff;
+  background-color: #FE584A; }
+
 .header__phone {
   font-size: 18px;
   color: #222222;
@@ -986,7 +990,7 @@ h3 {
       max-width: 450px; } }
   @media (min-width: 1470px) {
     .offers__right-info {
-      max-width: 367px; } }
+      max-width: 368px; } }
 
 .offers__list {
   background-color: #222222;
@@ -1037,6 +1041,9 @@ h3 {
     background-color: #ffffff;
     right: 0;
     top: 0; }
+  .offers__list-link:active, .offers__list-link:hover, .offers__list-link:focus {
+    background-color: #ffffff;
+    color: #222222; }
 
 .offers__cars-list-link::after {
   background-image: url("../img/sedan.svg"); }
@@ -1075,7 +1082,7 @@ h3 {
   display: block; }
   @media (min-width: 1470px) {
     .offers__car img {
-      min-height: 530px; } }
+      height: 530px; } }
 
 .offers__car-link {
   position: absolute;
@@ -1097,13 +1104,19 @@ h3 {
   .offers__car-link::after {
     position: absolute;
     content: "";
-    width: 45px;
-    height: 45px;
+    width: 75px;
+    height: 100%;
     background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    right: 30px; }
+    right: 0;
+    background-color: #fff; }
+  .offers__car-link:active, .offers__car-link:hover, .offers__car-link:focus {
+    background-color: #222222;
+    color: #ffffff; }
 
 .offers__right-block--vip {
   background-image: -webkit-gradient(linear, right top, left top, from(white), to(rgba(255, 255, 255, 0))), url("../img/vip.png");
@@ -1228,6 +1241,14 @@ h3 {
   outline: 0;
   outline-offset: 0;
   text-decoration: underline; }
+
+@media (min-width: 1470px) {
+  .about-company .offers__car img {
+    height: 100%; } }
+
+@media (min-width: 1470px) {
+  .about-company .offers__right-block-text {
+    padding-top: 70px; } }
 
 /*
  * Стили для секции Преимущества на главной
@@ -1543,17 +1564,18 @@ h3 {
   width: auto;
   min-width: auto; }
 
-@media (min-width: 768px) {
-  .write-us__map {
-    width: 100%; } }
-
-@media (min-width: 1470px) {
-  .write-us__map {
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    top: 0;
-    right: 0; } }
+.write-us__map {
+  overflow-x: hidden; }
+  @media (min-width: 768px) {
+    .write-us__map {
+      width: 100%; } }
+  @media (min-width: 1470px) {
+    .write-us__map {
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      top: 0;
+      right: 0; } }
 
 #map {
   width: 100%;
@@ -1918,7 +1940,9 @@ h3 {
   .car-park__link:active, .car-park__link:hover, .car-park__link:focus {
     outline: 0;
     outline-offset: 0;
-    text-decoration: underline; }
+    text-decoration: underline;
+    background-color: #ffffff;
+    color: #222222; }
 
 .car-park__link-text {
   -ms-flex-item-align: center;
@@ -2199,3 +2223,67 @@ h3 {
 .transfer-table td:first-child {
   text-align: left;
   padding-left: 10px; }
+
+.page404 {
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  color: #222222; }
+  @media (min-width: 768px) {
+    .page404 {
+      background-image: url("../img/404.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right center;
+      text-align: left;
+      padding-left: 8%; } }
+  @media (min-width: 1000px) {
+    .page404 {
+      padding-left: 20px;
+      padding-bottom: 50px; } }
+  @media (min-width: 1470px) {
+    .page404 {
+      padding-bottom: 225px;
+      padding-top: 70px; } }
+
+.page404 h1 {
+  margin: 0;
+  font-size: 80px;
+  font-weight: 800; }
+  @media (min-width: 768px) {
+    .page404 h1 {
+      font-size: 100px; } }
+  @media (min-width: 1000px) {
+    .page404 h1 {
+      font-size: 160px; } }
+
+.page404 a {
+  margin-top: 20px;
+  max-width: 320px;
+  width: 100%; }
+
+.page404__top-text {
+  margin: 20px 0;
+  font-size: 20px; }
+  @media (min-width: 1000px) {
+    .page404__top-text {
+      font-size: 45px; } }
+  @media (min-width: 1470px) {
+    .page404__top-text {
+      margin-top: 30px; } }
+
+.page404__text {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .page404__text {
+      margin: 0;
+      max-width: 300px; } }
+  @media (min-width: 1000px) {
+    .page404__text {
+      font-size: 32px;
+      max-width: 500px; } }
+  @media (min-width: 1470px) {
+    .page404__text {
+      max-width: 845px; } }

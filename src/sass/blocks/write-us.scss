@@ -81,6 +81,8 @@
 }
 
 .write-us__map {
+  overflow-x: hidden;
+
   @include tablet {
     width: 100%;
   }

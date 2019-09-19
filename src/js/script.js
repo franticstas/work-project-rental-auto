@@ -1,3 +1,5 @@
+new WOW().init();
+
 //Мобильное меню
 $('.header__nav-button').click(function() {
   $('.header__nav-button').toggleClass('header__nav-button--close');

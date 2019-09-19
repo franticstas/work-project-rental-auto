@@ -87,6 +87,11 @@
   }
 }
 
+.header__nav-item.active a {
+  color: #ffffff;
+  background-color: $red;
+}
+
 .header__phone {
   font-size: 18px;
   color: $black;

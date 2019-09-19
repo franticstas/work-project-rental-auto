@@ -150,7 +150,7 @@
   }
 
   @include desktop {
-    max-width: 367px;
+    max-width: 368px;
   }
 }
 
@@ -214,6 +214,13 @@
     right: 0;
     top: 0;
   }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: $black;
+  }
 }
 
 .offers__cars-list-link {
@@ -271,7 +278,7 @@
   display: block;
 
   @include desktop {
-    min-height: 530px;
+    height: 530px;
   }
 }
 
@@ -297,12 +304,23 @@
   &::after {
     position: absolute;
     content: "";
-    width: 45px;
-    height: 45px;
+    width: 75px;
+    //height: 45px;
+    height: 100%;
     background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     top: 50%;
     transform: translateY(-50%);
-    right: 30px;
+    right: 0;
+    background-color: #fff;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $black;
+    color: #ffffff;
   }
 }
 
@@ -451,5 +469,17 @@
     outline: 0;
     outline-offset: 0;
     text-decoration: underline;
+  }
+}
+
+.about-company .offers__car img {
+  @include desktop {
+    height: 100%;
+  }
+}
+
+.about-company .offers__right-block-text {
+  @include desktop {
+    padding-top: 70px;
   }
 }
